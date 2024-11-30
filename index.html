@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Bespin Cloud City
-    </title>
-  </head>
-  <body>
-    <h2>Server Maps:</h2>
-    <h3><a href="2024-06-10_14-43-02/unmined.index.html">June 10, 2024</a></h3>
+<head>
+  <title>Bespin Cloud City</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="headerMain">
+    <div class="image">
+      <img src="icon.png">
+    </div>
+    <div class="headerText">
+      <div class="title">
+        <h1>Merry Band of Pirates Minecraft Server</h1>
+      </div>
+      <div class="subtitle">
+        <h2>Bespin Cloud City</h2>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="pageColumn">
+      <div class="mapDivision pageDivision">
+        <div class="title">
+          <h2 id="button">Server Maps&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+          <h2 id="leftMapButton" class="secretClickable">&#8592;</h2>
+          <input type="text" id="mapNameField" disabled="true"></input>
+          <h2 id="rightMapButton" class="secretClickable">&#8594;</h2>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <a id="mapLink" href="">Open Map</a>
+        </div>
+        <embed type="text/html" src="2024-06-10_14-43-02/unmined.index.html" class="map" id="map"></embed>
+      </div>
+    </div>
+
+    <!-- <h3><a href="2024-06-10_14-43-02/unmined.index.html">June 10, 2024</a></h3>
     <h3><a href="2024-06-18_20-45-01/unmined.index.html">June 18, 2024</a></h3>
     <h3><a href="2024-06-25_20-40-59/unmined.index.html">June 25, 2024</a></h3>
     <h3><a href="2024-07-01_00-05-03/unmined.index.html">July 1, 2024</a></h3>
@@ -19,12 +45,115 @@
     <h3><a href="2024-08-08_03-05-03/unmined.index.html">August 8, 2024</a></h3>
     <h3><a href="2024-08-15_03-05-03/unmined.index.html">August 15, 2024</a></h3>
     <h3><a href="2024-09-22_03-05-03/index.html">September 22, 2024</a></h3>
-    <h3><a href="2024-11-08_03-05-03/index.html">November 8, 2024</a></h3>
-    <br>
-    <h2>Modpacks:</h2>
-    <h3>Download: <a href="modpacks/LederSchuh Improved 1.21 1.0.1.mrpack">LederSchuh Improved 1.21-1.0.1</a></h3>
-    <br>
-    <h2>Distant Horizons</h2>
-    <h3>Download: <a href="mods/DistantHorizons-fabric-2.3.0-a-dev-1.21.1.zip">DistantHorizons-fabric 1.21, Nov 15 Build</a></h3>
-  </body>
+    <h3><a href="2024-11-08_03-05-03/index.html">November 8, 2024</a></h3> -->
+    <div class="pageColumn">
+      <div class="modpackDivision pageDivision">
+        <h2>Modpacks:</h2>
+        <h3>Download: <a href="modpacks/LederSchuh Improved 1.21 1.0.1.mrpack">LederSchuh Improved 1.21-1.0.1</a></h3>
+      </div>
+      <div class="modDivision pageDivision">
+        <h2>Distant Horizons</h2>
+        <h3>Download: <a href="mods/DistantHorizons-fabric-2.3.0-a-dev-1.21.1.zip">DistantHorizons-fabric 1.21, Nov 15 Build</a></h3>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
+
+<style>
+body {
+  margin: 0px;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pageColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.headerMain {
+  background-color: #4080ff;
+  padding-top: 0.33em;
+  padding-bottom: 0.67em;
+  padding-left: 0.33em;
+  padding-right: 0.33em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.headerText {
+  margin-left: 0.67em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title > h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  text-align: center;
+}
+
+.subtitle > h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #404040;
+}
+
+.image {
+  display: grid;
+  vertical-align: center;
+}
+
+.map {
+  min-height: 50vh;
+  width: 100%;
+}
+
+.pageDivision {
+  background-color: #40d068;
+  padding: 8px;
+  margin: 8px;
+}
+
+.secretClickable {
+  cursor: pointer;
+}
+
+#mapNameField {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .headerMain {
+    position: relative;
+  }
+  .map {
+    min-height: unset;
+    aspect-ratio: 2 / 1;
+  }
+}
+@media (min-width: 1200px) {
+  .pageColumn {
+    width: 50%;
+  }
+}
+</style>
+
+<script src="script.js"></script>

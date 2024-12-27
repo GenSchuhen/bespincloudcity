@@ -57,6 +57,10 @@ var maps = [
   {
     "text": "November 8, 2024",
     "link": "2024-11-08_03-05-03/index.html"
+  },
+  {
+    "text": "December 22, 2024",
+    "link": "2024-12-22/index.html"
   }
 ];
 var mapIndex = maps.length-1;

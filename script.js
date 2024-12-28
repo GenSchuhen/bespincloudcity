@@ -55,6 +55,10 @@ var maps = [
     "link": "2024-09-22_03-05-03/index.html"
   },
   {
+    "text": "October 22, 2024",
+    "link": "2024-10-22/index.html"
+  },
+  {
     "text": "November 8, 2024",
     "link": "2024-11-08_03-05-03/index.html"
   },

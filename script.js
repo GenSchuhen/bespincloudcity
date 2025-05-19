@@ -73,6 +73,10 @@ var maps = [
   {
     "text": "January 22, 2025",
     "link": "2025-1-22/index.html"
+  },
+  {
+    "text": "May 15, 2025",
+    "link": "2025-05-15/index.html"
   }
 ];
 var mapIndex = maps.length-1;
